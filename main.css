@@ -1,0 +1,24 @@
+#main {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.main-title {
+  background: green;
+  padding: 0;
+}
+
+#survey-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#survey-form input {
+  padding: 10px;
+  margin: 10px;
+}

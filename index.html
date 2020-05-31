@@ -7,12 +7,15 @@
       rel="stylesheet"
       href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
     />
+    <link rel="stylesheet" href="main.css" />
     <title>Survey Form</title>
   </head>
   <body>
     <div id="main">
-      <h1 id="title">FCC Survey Form</h1>
-      <p id="description">Thank you for checking out our form!</p>
+      <div class="main-title">
+        <h1 id="title">FCC Survey Form</h1>
+        <p id="description">Thank you for checking out our form!</p>
+      </div>
 
       <form id="survey-form">
         <label for="name" id="name-label">Name</label>
@@ -36,6 +39,32 @@
           <option value="orange">Orange</option>
           <option value="red">Red</option>
         </select>
+
+        <div class="radio">
+          <h3>Why did you choose this color? (Select all that apply.)</h3>
+          <input type="radio" id="best" name="best" />
+          <label for="best">It's the best!</label>
+
+          <input type="radio" id="pretty" name="pretty" />
+          <label for="pretty">It's the prettiest!</label>
+
+          <input type="radio" id="bright" name="bright" />
+          <label for="bright">It's the brightest!</label>
+        </div>
+
+        <div class="checkbox">
+          <h3>Dog or Cat person or both?</h3>
+          <input type="checkbox" id="dog" name="dog" value="dog" />
+          <label for="dog">Doggos please!</label>
+          <input type="checkbox" id="cat" name="cat" value="cat" />
+          <label for="cat">Kitty kats all teh way!</label>
+        </div>
+
+        <div class="text-area">
+          <h3>Any comments?</h3>
+          <input type="textaarea" />
+        </div>
+        <button id="submit" type="submit">Submit</button>
       </form>
     </div>
   </body>
